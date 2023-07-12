@@ -1,0 +1,232 @@
+body::-webkit-scrollbar{
+  width: 6px;
+  height: 1px;
+}
+
+  body::-webkit-scrollbar-thumb{
+  background: linear-gradient(16deg, rgb(22, 185, 84) 0%,rgb(8, 43, 56) 28%, rgba(150,0,65));
+  border-radius: 6px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+:root {
+  --bg-color: #67798b;
+  --h-color: #961983;
+  --text-color: #240962;
+  --hover-color: #722ab1;
+
+}
+
+body{
+  background:linear-gradient(to right,#e3e7e9,#bd50d8);
+}
+.logo{
+  overflow-y: hidden;
+}
+
+nav{
+  
+  display: flex;
+  width: 100vw;
+  margin: auto;
+  padding: 20px 0px;
+  align-items:center;
+  justify-content: space-evenly;
+}
+h2{
+
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(44, 8, 61);
+  cursor: pointer;
+
+}
+ul{
+  font-size: 25px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 30px 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+nav ul li a:hover{
+  color: var(--hover-color);
+}
+
+.main{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 686px;
+}
+.images1{
+  width: 500px;
+  height: 500px;
+  margin: 52px;
+}
+
+h1{
+  font-size: 50px;
+  color: var(--text-color);
+  text-align: center;
+}
+h3{
+  font-size: 30px;
+  color: var(--text-color);
+
+}
+span{
+  color: rgba(61, 22, 105, 0.767);
+  font-size: 53px;
+}
+hr{
+  border: 0.6px solid  #ac3fcddf;
+  width: 100px;
+  margin: 20px 0px;
+}
+p{
+  margin: 40px 0px;
+  color: hsl(0, 0%, 2%);
+  max-width: 45ch;
+}
+
+.btn{
+  background: rgb(136, 129, 196);
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color:#f279f5;
+  display: inline-block;
+  border-radius: 3px;
+}
+.btn:hover{
+  background: var(--hover-color);
+}
+
+.about_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.images2{
+margin: 20px 30px;
+padding: 100px;
+}
+.details{
+  width: 900px;
+  height: 700px;
+margin-left: 20%;
+padding: 10px;
+}
+.article{
+  width: 200px;
+  height: 150px;
+  animation: ease-out;
+}
+.row1{
+  width:100%;
+}
+.zoom1{
+  display: calc() ;
+  justify-content: space-around;
+  transition: transform .2s; /* Animation */
+   margin: 0px; 
+   padding: 0px;
+  width: 200px;
+  height: 200px;
+}
+.zoom1:hover{
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+.zoom2 {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+}
+.zoom2:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom3 {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+}
+.zoom3:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom4 {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+}
+.zoom4:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  background: transparent;
+}
+.footer .te-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer img{
+  width: 80px;
+  border-radius: 250%;
+}
+.socialAccount{
+  position:absolute;
+  right: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.socialAccount a{
+font-size: 30px;
+color: #e3e7e9;
+margin-bottom: 10px;
+}
+.socialAccount a:hover{
+  color:#331b39;
+}
+@media  (max-width: 768px) {
+  h2{
+    font-size: 20pxpx;
+  }
+}
